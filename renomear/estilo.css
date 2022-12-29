@@ -1,0 +1,50 @@
+body{
+    background-image: url('Imagens/wallpaper004.jpg');
+}
+
+nav h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+}
+
+main{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 1100px;
+    height: 400px;
+    background-image: url('Imagens/wallpaper001.jpg');
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+ul{
+    list-style-type: none;
+}
+
+div.square{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    height: 360px;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+div#normal{
+    background-image: linear-gradient(aqua, aquamarine);
+}
+
+div#grad{
+    background-image: radial-gradient(aqua, aquamarine);
+}
+
+div#bkgimg{
+    background-image: url('imagens/pattern001.png');
+}
