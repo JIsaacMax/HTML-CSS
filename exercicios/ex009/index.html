@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Utilização de listas</h1>
+    <h2>Ordenadas</h2>
+    <ol>
+        <li>Entregues por tag li</li>
+        <li>Devem ser inseridas todas as vezes que um novo item é adicionado</li>
+        <li>Se organiza conforme as tags propostas no código</li>
+        <li>Numeração automática respeitando como foi descrito no código</li>
+        <li>A ordem é relevante</li>
+    </ol>
+    <ol type="A">
+        <li>É possível selecionar o tipo de "numeração" que a lista terá, declarando dentro da tag ol o "type"</li>
+        <li>Não é obrigatório o fechamento de tag em li, porém vai de acordo com seu próprio método de identação</li>
+        <li>Já a tag ol ainda possuirá o fechamento</li>
+        <li>Também é possível modificar a partir de que item a lista começa a contar. Ex: Ao invés do primeiro item receber 1 ele pode começar a contar com 4, usando a tag start logo após o type.</li>
+    </ol>
+
+    <h2>Lista desorganizada</h2>
+    <ul>
+        <li>Elementos</li>
+        <li>Sem</li>
+        <li>Necessidade</li>
+        <li>De</li>
+        <li>Enumeração</li>
+        <li>ou valores</li>
+        <li>de "indice"</li>
+    </ul>
+    <p><small><small>Já que essa lista não possui enumeração, seu diferencial são simbolos,que também podem ser definidas usando a tag type. <br>Mudando entre circulos, maiores e menores, quadrados e discos.</small></small></p>
+    <h2>União de ambas por aninhamento</h2>
+    <ol type="I">
+        <li>Primeiro a lista ordenada</li>
+        <ul type="square">
+            <li>Dentro delas, tópicos sem ordem especificada</li>
+            <li>Tornando a lista até mais dinâmica em certas finalidades</li>
+        </ul>
+        <li>Então a segunda ordenação</li>
+        <ul type="square">
+            <li>Criando um aspecto único</li>
+            <li>Ainda mais parando pra pensar que são usadas para fazer menus</li>
+            <li>Já que essa tag cria um dinamismo maior</li>
+        </ul>
+    </ol>
+    <ol type="A">
+        <li>Códigos teste</li>
+        <ul type="circle">
+            <code>
+                <li>Hello word</li>
+                <li>Matriz transposta</li>
+                <li>Função de fibonacci</li>
+                <em>
+                    <li>Ordenação de lista</li>
+                </em>
+            </code>
+        </ul>
+        <li>Desafios teste</li>
+        <ul type="circle">
+            <code>
+                <li>BeeCrowd</li>
+                <strong>
+                    <li>Maratona Sul Americana</li>
+                </strong>
+                <li>Maratona Mineira</li>
+                <li>Replit</li>
+            </code>
+        </ul>
+    </ol>
+    <h2>Definições</h2>
+    <dl>
+        <dt>O que tu ta explicando</dt>
+        <dd>E a definição do que tu ta explicando</dd>
+        <dt>Tudo isso</dt>
+        <dd>Dentro de um dl que é basicamente a tag que chama as definições</dd>
+        <dt>Por que disso?</dt>
+        <dd>Basicamente o HTML vai interpretar o que estiver escrito diferente quando você declara que ele é diferente. Por isso esse tipo de termo, por mais que visualmente igual, ele se torna diferente para o interpretador</dd>
+    </dl>
+
+    <h1>Anotações de interesse!</h1>
+    <h2>Nomeclatura</h2>
+    <p>O <strong>ol significa organized list</strong>, ou seja, lista organizada, já o <em>ul é de unorganized list</em>, lista desorganizada, assim fica mais facil de lembrar <hr></p>
+    <h2>Macetes</h2>
+    <p>Modificar em massa os componentes é só clicar no<em> meio da tag pra que ela fique pontilhada, segurar alt e ir clicando nas outras</em> que vai querer mudar, depois de selecionar é só escrever que ele modifica tudo pra ti. <br><small>Até os fechamentos.</small></p>
+    <br><hr>
+    <p>Listas não tem limite de aninhamento, então pode ter uma lista dentro da outra que está dentro da outra infinitamente, ela só vai ficar cada vez mais <mark style="background-color: rgb(46, 173, 46);">"identada"</mark> pra frente</p>
+
+</body>
+</html>

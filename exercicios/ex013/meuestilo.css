@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body{
+    /*Representação por nomeclatura*/
+    color: black; background-color: white;
+    /*Representação por hexadecimal Um valor opcional é a transparência, dada por simplesmente adicionar um 4º digito no processo*/
+    color: #000000; background-color: #ffffff;
+    /*Representação por HSL(Hue, Sturation, Luminocity) Um valor opcional é a transparência*/
+    color: rgb(0, 0, 0 ); background-color: rgb(255, 255, 255);
+}

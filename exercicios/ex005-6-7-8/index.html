@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negrito e Itálico</title>
+    <style>
+        mark{
+            background-color: yellowgreen   ;
+        }
+    </style>
+</head>
+<body>
+    <h1>As formataçõe mais comuns</h1>
+    <h2><b>Negrito</b> e <i>Itálico</i></h2>
+    <p>A tag b de bold pode colocar negrito as coisas porém ela não adiciona nada além do efeito visual. Já a tag strong cria um significado, dando "semântica" a palavra</p>
+    <!--Dica do Guarana, ctrl+shift+p depois de selecionar o termo que quer envelopar e clicar na letra da tag, ex: b e em seguida enter-->
+    <p>Um exemplo visual entre <b>bold</b> e <strong>strong</strong>, visualmente identicos, porém para o código são coisas diferentes</p>
+
+    <p> <hr> Também existe uma tag de enfase que é dada por <em>"em", deixando esse aspécto destacado</em><br> A diferça entre os termos é a mesma que bold e strong para negrito, um é apenas visual, o outro é semântico. <br> o <i>"i"</i> funciona como o visual e <em>"em" funciona como semântico</em><hr></p>
+    
+    <p>A tag de marcador parece um marca-texto de caderno tipo <mark style="background-color: rgb(240, 75, 75);">MARK</mark>, até que fica bonitin, mas dá pra adaptar melhor usando em CSS uma complexidade interessante. <br> Como se faz isso? <br>Simples, usar a tag style dentro da tag mark, isso basicamente "importa" as funções de CSS</p>
+
+    <h1><strong>IMPORTANTE</strong></h1>
+    <h2>Anotações relevantes a não esquecer</h2>
+    <p>Tudo que se refere a <em>semântica</em> é <strong>HTML</strong>. <br> Já o que diz respeito a <i>forma</i>, é território <b>CSS</b></p>
+    <p><hr><br>Falando já sobre o uso parcial de CSS, se mudar o style dentro de uma TAG, só aquela será uma excessão, para mudar de forma a todas herdarem a caracteristica, deve no head colocar a tag style e dentro dela trazer uma caracteristica a tag mark!</p>
+
+    <h1>Proporções de textos</h1>
+    <h2>Além da feita</h2>
+        <h3>Pela própria hierarquia de h's</h3>
+            <p>
+                Textin grande ou pequeno é legal também, a tag <small>small</small> deixa a fonte levemente menor, da um efeito de letras miúdas de um contrato. <hr><br>É possível colocar um riscado, como se fosse um texto a ser desconsiderado na tag <del>"del"</del>, e o oposto vale pra tag <ins>"ins"</ins>, que seria o inserido. Ele é a proporção semântica da tag <u>"u"</u>, que seria puramente "sublinado"
+            </p>
+            <p>Seguindo mesmo ramo porém mais pra operações, seria a tag <sub>"sub"</sub>, que seria de subescrito e <sup>"sup"</sup>, que seria sobrescrito.</p>
+            <p>
+                Finalizando a manipulação de caracteres, a gente tem a função monoespaçada que é citada por <code>"code"</code>, onde uma aplicação mais sentada seria de fato em um código como <code>for(item.index in list->elemento.char){return temp->prox.indexdireito}</code>. Um código inventado mas que esclarece um uso melhor. <br>O que a tag faz é basicamente com que todos os caracteres assumam o mesmo espaço na tela. <br>Já se quiser fazer algo que respeite até a identação do seu código é só envelopar a tag code com a tag pre. Fica dessa forma: <br>
+                <pre><code>
+        dynamic valor=23
+        if(valor>=14)
+            printf("valor superior ao limite");
+            return true;
+        else{
+            printf("Ta muito além");
+            return false;
+        }
+                </code></pre>
+                <!--shift+tab retira os 7 espaços de identação quando seleciona o que quer passar pra trás-->
+                <br>
+                Então ele basicamente respeita a distância inserida entre elementos no codigo. Tendo seu 'nome' em pre porque ele é uma pré-formatação
+            </p>
+    <h2>Citações Simples</h2>
+        <p>Nós temos também citações, que visualmente são só, como diria Gustavo FantaUva <q>Colocar aspas, mas vai por mim, ele dá significado semântico, e isso faz toda diferença.</q></p>
+    <h2>Citações complexas</h2>
+        <p>Aqui as citações pulam linhas e tal, a tag delas são blockquote's</p>
+        <blockquote cite="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-8-aula-4-citacoes-e-codigos/">
+            Incrivel o potencial que essas tags tem, e sia relevãncia para os mecanismos de buscas quando se refere a recomendar seu site, já que para o usuário não fará grande diferença.<br> Unido com a tag cite, você pode enderessar de onde tirou essa sitação.
+        </blockquote>
+        <h2>Abreviações</h2>
+        <p>Quando você escreve algo em uma sigla ou simplesmente abreviada, é possível fazer com que passando o mouse em cima o site dê a definição por extenso. Exemplo em Phineas e Ferb que a agencia secreta tem o nome de <abbr title="Organização Sem Uma Sigla Bacana">O.S.U.S.B</abbr>, fazendo isso através de uma tag de abbr com um tittle preenchido por você!</p>
+        
+        <h2>Meu preferido</h2>
+        <p>Texto invertido, ou como gosto de chamar <bdo dir="rtl">Texto Invertido</bdo></p>
+</body>
+</html>

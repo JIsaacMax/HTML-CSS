@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Estilos</title>
+    <link rel="stylesheet" href="meuestilo.css">
+</head>
+<body>
+    <h1 style="position: static; text-align:center;">INLINE</h1>
+    <h2 style="color: red;">Não é o ideal</h2>
+    <p>O inline é basicamente fazer o código na própria linha da tag adicionando o style e colocando as modificações</p>
+    <h2>Por que não se usa?</h2>
+    <p>Basicamente ele limita pra caramba as modificações, já que só serve justamente pra tag em especifico que colocou, e não pra outras iguais a ela, então isso faz com que o código possua redundâncias e diversas dificuldades em produzir classes mais fluidas</p>
+    <h2>Diferenças</h2>
+    <h3>HTML</h3>
+    <p>Como o HTML busca entregar semântica e sentido as coisas, suas classes e escolhas de tag, mesmo muitas vezes não sendo visualmente diferentes como conversamos entre <bold>bold</bold> e <strong>strong</strong>, a forma como ele interpreta é mais relevante aos mecanismos de busca e ordenação de elementos</p>
+    <h3>CSS</h3>
+    <p>O Css por sua vez, não trás significado algum as suas modificações, é puramente visual, cascatas de efeito design, não possuem real diferença ao navegador, apenas a quem vê o estilo, atraindo o visitante.</p>
+    <h2><strong style="background-color: darkred; border-radius: 10%;">Não use basicamente</strong></h2>
+    <p>O inline não é util de modo genérico, vai ter certos momentos onde poderá ser um quebra galho, porém ele polue e prejudica a manutenabilidade do código, mesmo que tenha o mesmo efeito visual no usuário</p>
+    <h1>Css Local/Interno</h1>
+    <h2>Já a tag Style no head, usada, mas nem tanto</h2>
+    <p>Tudo ali dentro se torna uma espécie de doc interno de css, já é uma grande evolução do inline, porém se apresenta melhor para justamente estilos que são aplicados a apenas um documento html, já que se estivermos falando de um site, cada pagina possui um documento independente, então se for para manipular estilos dessa forma, teria de copiar para cada uma das paginas</p>
+    <h1>A MAIS LINDA!</h1>
+    <h2>Link para CSS externo</h2>
+    <p>Dessa forma no head, você coloca uma tag link:css e pode fazer as modificações de estilo em um documento css externo</p>
+</body>
+</html>

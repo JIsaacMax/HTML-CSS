@@ -1,0 +1,77 @@
+@charset 'UTF-8';
+
+div{
+    display: block;
+    background-color: #86A5D9;
+    border: 1px double #5F4BB6;
+    text-align: center;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+} 
+
+/*
+Assim como # é pra ID e . é para classe
+: é para pseudoclasses, que está relacionado ao ESTADO da tag
+:: é para pseudoelemento, ele serve para selecionar uma modificação especifica em algum elemento ou classe especial em condições como: after, before, first-letter, first-line, entre outros.
+> serve para dizer que é "filho" ou no caso, está contido
+*/
+
+div > p{
+    display: none;
+}
+
+
+/*hover=mouse por cima*/
+div:hover{
+    background-color: #5F4BB6;
+}
+
+div:hover > p{
+    display: block;
+    
+}
+
+div > div{
+    display: none;
+}
+
+div:hover > div{
+    display: block;
+    
+}
+
+div > div > div{
+    display: none;
+}
+
+div:hover > div:hover > div{
+    display: block;
+}
+
+a{
+    color: #C4EBC8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:visited{
+    color: #a4c7a8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover{
+    color: #26F0F1;
+    text-decoration: double;
+}
+
+a:active{
+    color: black;
+    font-weight: 900;
+    text-decoration: wavy;
+}
+
+a::before{
+    content: '➾';
+}

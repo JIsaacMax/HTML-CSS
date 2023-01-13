@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Dinamismo na imagem</h1>
+    <p>Usaremos a tag picture para que dependendo do dispositivo, ela adapte a sourse da imagem</p>
+    <picture>
+        <source media="(max-width: 800px)" srcset="img/pequena.jpg" type="image/jpg">
+        <source media="(max-width: 1000px)" srcset="img/media.jpg "type="image/jpg">
+        <img src="img/grande.jpg" alt="flexibilidade">
+    </picture>
+
+    <h1>Audios</h1>
+    <p>Testando um lofizin relaxante</p>
+    <audio preload="none" autoplay controls>
+        <source src="msc/love.mp3" type="audio/mpeg">
+    </audio>
+    <!--Pegar o costume se usar as tags e entregar pra ela possíveis sourses, para que seja adaptável a cada navegador, já que colocar direto na tag limita seu uso a compatibilidade original-->
+    <video controls>
+        <source src="videos/pato.mp4" type="video/mp4">
+        <!--Caso nenhum dos acima rode, essa mensagem será exibida-->
+        <p>Você não consegue visualizar o video, incompatível</p>
+    </video>
+</body>
+</html>
