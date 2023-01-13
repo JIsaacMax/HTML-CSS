@@ -15,3 +15,12 @@ function clicar(){
     
 
 }
+
+function fechar(){
+    let a = window.document.getElementById('sanduiche')
+    let b = window.document.querySelector("div.menu-sanduiche")
+
+    a.style.transform = "rotate(0deg)";
+        a.style.right = "10px";
+        b.style.display = "none";
+}
